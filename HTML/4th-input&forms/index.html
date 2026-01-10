@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* General page style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+/* Form container */
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Each input block */
+div {
+    margin-bottom: 15px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Text inputs, textarea, select, datalist input */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Textarea */
+textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+/* Radio and checkbox spacing */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Buttons */
+button {
+    padding: 8px 16px;
+    margin: 5px 5px 0 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="button"] {
+    background-color: #3498db;
+    color: white;
+}
+
+button[type="reset"] {
+    background-color: #e67e22;
+    color: white;
+}
+
+button[type="submit"] {
+    background-color: #2ecc71;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Fieldset */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+    </style>
+    <title>Inputs and Forms</title>
+</head>
+<body>
+    <h1>Forms and Inputs</h1>
+    <div>
+        <form action = "post">
+        <label for="name">Enter your name</label>
+        <input type = "text" placeholder="enter your name" id="name" name="Name">
+        
+    </div>
+    
+    <div>
+        <input type="radio" id = "Male" name = "gender"value="Male">
+        <label for = "Male">Male</label>
+        <input type="radio" id = "Female" name = "gender"value="Male">
+        <label for = "Female">Female</label>
+    </div>
+    <div>
+        <input type="checkbox" id="Policy" name="Policy">
+        <label for="Policy">Do you agree with our terms and policies</label>
+        <br>
+        <label for="Comments">Enter your Comments here</label>
+        <br>
+        <textarea id="Comments" name="Comments"></textarea>
+    </div>
+    <div>
+         <label for="Fruits">Select a Fruit</label>
+        <select name="fruits" id="fruits">
+            <option value="Apple">Apple</option>
+            <option value="Banana">Banana</option>
+            <option value="Kiwi">Kiwi</option>
+            <option value="Default" disabled selected>--Select--</option>
+        </select>
+    
+    <br>
+        <input list="browsers" name="browser">
+    <datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Edge">
+    <option value="Safari">
+</datalist>
+    <button type="button" name="Button">Click me</button>
+    <button type="reset" name="Reset">reset</button>
+    <button type="submit" name="Submit">Submit</button>
+    <br>
+    <fieldset>
+  <legend>Personal Info</legend>
+  <label>Name: <input type="text"></label>
+  <label>Email: <input type="email"></label>
+</fieldset>
+    <br>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="text" id="a" value="adesh"> +
+  <input type="number" id="b" value="10"> =
+  <output name="result"></output>
+    
+    <progress value="40" max="100"></progress> <!-- Progress bar -->
+    <meter value="0.0" min="0" max="1" low="0.3" high="0.9" optimum="1"></meter> <!-- Meter -->
+
+
+    </div>
+    </form>
+</body>
+</html>
