@@ -1,0 +1,71 @@
+
+/* ELEMENT SELECTOR */
+/* CENTERING DIV : METHOD 1  */
+div{
+    display: flex;
+    background: #dbb5b5;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+/* Centering DIV and item : METHOD 2 */
+heading h2{
+    display: grid;
+   place-items: center;
+   text-decoration: underline;
+   background-color: aqua;
+   width: 50%;
+   margin: auto;
+   margin-bottom: 20px;
+}
+    
+
+/* ID SELECTOR */
+#Blue{
+    background-color: rgb(63, 63, 239);
+}
+#Green{
+    background-color: rgb(10, 143, 10);
+}
+
+/* CHILD SELECTOR */
+
+div > p {
+    color: rgb(36, 75, 233);
+    background-color: bisque;
+    margin: 10px;
+
+}
+
+#Green > p {
+    color: black;
+
+}
+
+/* DESCENDENT SELECTOR */
+
+#Blue  p{
+    color: rgb(24, 19, 116);   
+}
+/* PSEUDO SELECTOR */
+a:hover{
+    background-color: antiquewhite;
+
+}
+a:visited{
+    color: black;
+
+}
+form input{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+input:focus{
+    
+background-color: aliceblue;
+  border: 2px solid blue;
+  
+}
+

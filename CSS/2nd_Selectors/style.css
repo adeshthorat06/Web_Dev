@@ -1,0 +1,52 @@
+
+/* ELEMENT SELECTOR */
+div{
+    background: #dbb5b5;
+
+}
+/* ID SELECTOR */
+#Blue{
+    background-color: rgb(63, 63, 239);
+}
+#Green{
+    background-color: rgb(10, 143, 10);
+}
+
+/* CHILD SELECTOR */
+
+div > p {
+    color: rgb(36, 75, 233);
+    background-color: bisque;
+
+}
+
+#Green > p {
+    color: black;
+
+}
+
+/* DESCENDENT SELECTOR */
+
+#Blue  p{
+    color: rgb(24, 19, 116);   
+}
+/* PSEUDO SELECTOR */
+a:hover{
+    background-color: antiquewhite;
+
+}
+a:visited{
+    color: black;
+
+}
+form input{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+input:focus{
+    
+background-color: aliceblue;
+  border: 2px solid blue;
+  
+}
