@@ -1,0 +1,46 @@
+.div{
+    display: inline-block;
+    border: 1px solid red;
+    padding: 100px;
+    text-align: center;
+    /* display: none; */
+}
+.AnotherDiv{
+    /* display: inline-block; */
+    border: 1px solid red;
+    padding: 10px;
+    /* display: none; */
+}
+
+.box1{
+    display: block;
+    border: 1px solid black;
+}
+.box2 {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center;   
+    gap: 10px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.box3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    border: 2px solid black;
+    padding: 20px;
+}
+.container {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    place-items: center;
+}
+.box4{
+    display: grid;
+    gap: 20px;
+    border: 2px solid black;
+    padding-inline: 65px;
+}
